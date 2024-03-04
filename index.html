@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>To-Do List</h1>
+      </header>
+      <div class="container">
+        <div class="list" id="todoList" ondrop="drop(event, 'todoList')" ondragover="allowDrop(event)">
+          <h2>To Do</h2>
+        </div>
+        <div class="list" id="inProgressList" ondrop="drop(event, 'inProgressList')" ondragover="allowDrop(event)">
+          <h2>In Progress</h2>
+        </div>
+        <div class="list" id="completeList" ondrop="drop(event, 'completeList')" ondragover="allowDrop(event)">
+          <h2>Complete</h2>
+        </div>
+      </div>
+      <button class="btn" onclick="generateNote()">Generate Note</button>
+    
+
+        <script src="./script.js"> </script>
+</body>
+</html>
